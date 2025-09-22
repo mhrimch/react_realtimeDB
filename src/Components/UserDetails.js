@@ -1,10 +1,7 @@
 import React from "react";
 import "./UserDetails.css";
 
-function UserDetails({ loadedUsers }) {
-  function onEditUserClicked(event, user) {}
-
-  function onDeleteUserClicked(event, user) {}
+function UserDetails({ loadedUsers, editUser,  onDeleteUser}) {
 
   return (
     <div className="user-details">
@@ -18,7 +15,8 @@ function UserDetails({ loadedUsers }) {
             <th>Gender</th>
             <th>Country</th>
             <th>City</th>
-            <th></th>
+              <th></th>
+                <th></th>
           </tr>
         </thead>
         <tbody>
@@ -33,6 +31,12 @@ function UserDetails({ loadedUsers }) {
               <td>{user.gender}</td>
               <td>{user.country}</td>
               <td>{user.city}</td>
+              <td>
+                <button className="btn btn-edit" onClick={(event) => editUser(event, user)}>Edit</button>
+              </td>
+              <td>
+                <button className="btn btn-delete" onClick={() => onDeleteUser(user)}>Delete</button>
+              </td>
             </tr>
           ))}
         </tbody>

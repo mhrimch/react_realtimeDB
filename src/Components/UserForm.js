@@ -2,7 +2,7 @@ import React, {useRef} from 'react';
 import './UserForm.css';
 import User from '../models/User';
 
-function UserForm({onCreateUser, closeForm }){
+function UserForm({onCreateUser, closeForm}){
     let fnameRef = useRef();
     let lnameRef = useRef();
     let emailRef = useRef();
@@ -28,11 +28,11 @@ function UserForm({onCreateUser, closeForm }){
   console.log(newUser);
         onCreateUser(newUser);
     }
-    return <>
-            <div id="myModal" class="modal">
+    return <>  
+           <div id="myModal" className="modal">
                     <div className="modal-content">
                         <div className="close" onClick={closeForm}>&times;</div>
-                        <h3>Create new user</h3>
+                        <h3>Create new User</h3>
                         <div className="user-form">
                             <form onSubmit={onSubmitUser}>
                                 <div>

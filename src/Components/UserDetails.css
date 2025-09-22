@@ -20,3 +20,36 @@
     background-color: #2C3E50;
     color: white;
   }
+
+  /* Basis für alle Buttons */
+.btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+/* Edit-Button */
+.btn-edit {
+  background-color: #4caf50;   /* Grün */
+  color: white;
+}
+
+.btn-edit:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+/* Delete-Button */
+.btn-delete {
+  background-color: #f44336;   /* Rot */
+  color: white;
+  margin-left: 4px;
+}
+
+.btn-delete:hover {
+  background-color: #d32f2f;
+  transform: scale(1.05);
+}

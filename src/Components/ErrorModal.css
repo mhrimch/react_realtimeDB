@@ -1,0 +1,48 @@
+.modal1-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.modal1 {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.modal1-header {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 1rem;
+}
+
+.modal1-body {
+  margin-bottom: 1rem;
+}
+
+.modal1-footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-danger {
+  background: #d9534f;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-danger:hover {
+  background: #c9302c;
+}
