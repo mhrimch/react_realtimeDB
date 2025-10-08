@@ -48,14 +48,14 @@ function UserForm({onCreateUser, closeForm}){
                                 </div>
                                 <div>
                                     <select name="country"  ref={countryRef}>
-                                        <option value="India">India</option>
+                                        <option value="India">Morocco</option>
                                         <option value="Germany">Germany</option>
                                         <option value="USA">USA</option>
                                         <option value="UK">UK</option>
                                     </select>
                                     <select name="city"  ref={cityRef}>
-                                        <option value="Delhi">Delhi</option>
-                                        <option value="Berlin">Berlin</option>
+                                        <option value="Delhi">Tiflet</option>
+                                        <option value="Berlin">Düsseldorf</option>
                                         <option value="New York">New York</option>
                                         <option value="London">London</option>
                                     </select>
