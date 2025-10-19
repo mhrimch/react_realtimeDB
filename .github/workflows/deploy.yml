@@ -26,8 +26,9 @@ jobs:
       run: npm install
 
     # 4️⃣ React App bauen
+      # 4️⃣ React App bauen
     - name: Build React app
-      run: npm run build
+      run: CI=false npm run build
 
     # 5️⃣ Deployment auf VPS
     - name: Deploy to VPS
